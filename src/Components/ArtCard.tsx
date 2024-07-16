@@ -1,4 +1,6 @@
 import React from 'react'
+import '../CSS/ArtCard.css'
+
 
 type Props = {}
 
