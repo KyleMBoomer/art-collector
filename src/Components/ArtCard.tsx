@@ -1,12 +1,22 @@
-import React from 'react'
 import '../CSS/ArtCard.css'
+import { useState } from 'react'
 
 
-type Props = {}
+interface Props {
+    record: {
+        image: string;
+        title: string;
+        description: string;
+    }
+}
 
-const ArtCard = (props: Props) => {
+const ArtCard: React.FC<Props> = ({ record }, handleFavorite) => {
+    const { image, title, description } = record
+
     return (
-        <div>ArtCard</div>
+        <div onChange={handleFavorite}>
+            <img src={image} />
+        </div>
     )
 }
 

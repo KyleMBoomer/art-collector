@@ -1,12 +1,28 @@
 import React from 'react'
 import '../CSS/MainGallery.css'
+import ArtCard from './ArtCard'
 
+interface Record {
+    image: object[]; // baseimageurl
+    title: string;
+    description: string;
+    dated: string;
+    creditline: string;
+    century: string;
+    dimensions: string;
+    id: number;
+}
 
-type Props = {}
+interface Props {
+    record: Record;
+}
 
-const MainGallery = (props: Props) => {
+const MainGallery: React.FC<Props> = ({ record }) => {
     return (
-        <div>MainGallery</div>
+        <div>
+            <h2>Main Gallery</h2>
+            < ArtCard record={record} />
+        </div>
     )
 }
 
