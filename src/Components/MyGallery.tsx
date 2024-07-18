@@ -1,11 +1,14 @@
 import React from 'react'
 import '../CSS/MyGallery.css'
+import ArtCard from './ArtCard'
 
 type Props = {}
 
 const MyGallery = (props: Props) => {
     return (
-        <div>MyGallery</div>
+        <div>
+            <h2>My Gallery</h2>
+        </div>
     )
 }
 
