@@ -36,8 +36,9 @@ const App: React.FC = () => {
       <div className="Header">
         <img src={Logo} className="main-logo" alt="Logo" />
         <nav className="Links">
-          <Link to='/MainGallery'>Main Gallery</Link>
-          <Link to='/MyGallery'> My Gallery</Link>
+          <Link to='/MainGallery' className="MainGallery-button">Main Gallery</Link>
+          <p className="big-slash">/</p>
+          <Link to='/MyGallery' className="MyGallery-button"> My Gallery</Link>
         </nav>
       </div>
       <Routes>
