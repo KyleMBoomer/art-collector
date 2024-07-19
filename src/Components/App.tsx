@@ -19,10 +19,11 @@ const App: React.FC = () => {
         </nav>
       </div>
       <Routes>
-        <Route path='/' element={<MainPage />} />
+        <Route path='/' element={<MainPage />} />   
         <Route path='/MainGallery'element={<MainGallery />} />
         <Route path='/MyGallery' element={<MyGallery />} />
       </Routes>
+      <Footer />
     </main>
   )
 }
