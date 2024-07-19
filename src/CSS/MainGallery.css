@@ -3,3 +3,8 @@
     flex-direction: column;
     align-items: center;
 }
+
+.MainGallery-Title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}

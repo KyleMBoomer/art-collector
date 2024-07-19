@@ -34,7 +34,7 @@ const MainGallery: React.FC = () => {
 
     return (
         <div className='main-gallery'>
-            <h2>Main Gallery</h2>
+            <h2 className="MainGallery-Title">Main Gallery</h2>
             {artCards}
         </div>
     )
