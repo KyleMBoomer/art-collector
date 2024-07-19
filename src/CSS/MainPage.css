@@ -1,0 +1,28 @@
+.mainPageWrapper {
+    /* display: flex;
+    flex-direction: column; */
+    width: 98.8vw;
+    height: 100vh;
+}
+
+.mainVideo {
+    width: 98.8vw;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+.mainVideo video {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.contentWrapper {
+    width: 98.8vw;
+    height: auto;
+    /* display: flex; */
+    text-align: center;
+    border: 2px solid red;
+}

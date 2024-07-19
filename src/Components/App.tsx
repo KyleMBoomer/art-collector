@@ -7,9 +7,10 @@ import MyGallery from './MyGallery'
 import ArtCard from './ArtCard'
 import Logo from '../Assets/Logo.png'
 import { Record, Image } from '../Utility/Types'
+import MainPage from './MainPage'
 
 
-const video = require('../Assets/sampleVideo1.mp4');
+// const video = require('../Assets/sampleVideo1.mp4');
 
 const App: React.FC = () => {
   // const [allRecords, setAllRecords] = useState<Record[]>([]);
@@ -39,12 +40,8 @@ const App: React.FC = () => {
           <Link to='/MyGallery'> My Gallery</Link>
         </nav>
       </div>
-      <div className="mainVideo">
-        <video width="100%" autoPlay loop muted>
-          <source src={video} type="video/mp4" />
-        </video>
-      </div>
       <Routes>
+        <Route path='/' element={<MainPage />} />
         <Route
           path='/MainGallery'
           element={<MainGallery />}
