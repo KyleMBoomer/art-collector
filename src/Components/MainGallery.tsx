@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../CSS/MainGallery.css'
 import ArtCard from './ArtCard'
 import { Record } from '../Utility/Types'
+import { fetchArtRecords } from './ApiCalls'
 
 
 const MainGallery: React.FC = () => {
@@ -9,19 +10,15 @@ const MainGallery: React.FC = () => {
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        fetch('https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=25')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to fetch records');
-                }
-                return response.json();
-            })
-            .then(data => {
-                setAllRecords([...data.artObjects]);
-            })
-            .catch(error => {
-                setError(error.message);
-            });
+        const loadRecords = async () => {
+            try {
+                const paintings = await fetchArtRecords()
+                setAllRecords(paintings)
+            } catch (error) {
+                setError('Failed to fetch records.')
+            }
+        }
+        loadRecords()
     }, [])
 
 
