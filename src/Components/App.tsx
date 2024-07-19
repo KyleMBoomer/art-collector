@@ -4,63 +4,55 @@ import { useEffect, useState } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import MainGallery from './MainGallery'
 import MyGallery from './MyGallery'
-import imageFetch from './ApiCalls'
 import ArtCard from './ArtCard'
-// import sampleVid from '../Assets/sampleVid.mov'
 import Logo from '../Assets/Logo.png'
+import { Record, Image } from '../Utility/Types'
 
-// type Props = {
-//   title: string,
-// }
 
-interface Record {
-  image: string[];
-  title: string;
-  description: string;
-  dated: string;
-  creditline: string;
-  century: string;
-  dimensions: string;
-  id: number;
-}
-
-interface Props {
-  record: Record;
-}
-
+const video = require('../Assets/sampleVideo1.mp4');
 
 const App: React.FC = () => {
-  const [allRecords, setAllRecords] = useState([])
-  console.log("allRecords:", allRecords)
+  // const [allRecords, setAllRecords] = useState<Record[]>([]);
 
-  useEffect(() => {
-    fetch('https://api.harvardartmuseums.org/object?size=30&apikey=02dc6b3b-1185-4e3f-91fa-675c61c02e3f')
-      .then(response => response.json())
-      .then(data => setAllRecords(data.records))
-      .catch(error => console.error('Failed to fetch records', error))
-  }, [])
-
+  // useEffect(() => {
+  //   fetch('https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=50')
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       console.log(data.artObjects)
+  //       setAllRecords([data.artObjects])
+  //     })
+  //     .catch(error => console.error('Failed to fetch records', error))
+  // }, []);
 
   // const handleFavorite = (id: number) => {
-  //   setAllRecords(allRecords.map(record => record.id === id ? { ...record, isFavorite: !record.isFavorite } : record
-  //   ))
-  // }
+  //   setAllRecords(allRecords.map(record =>
+  //     record.id === id ? { ...record, favorite: !record.favorite } : record
+  //   ));
+  // };
 
   return (
     <main className='AppContainer'>
-      <nav>
-        <Link to='/MainGallery'>Main Gallery</Link>
-        <Link to='/MyGallery'> My Gallery</Link>
-      </nav>
+      <div className="Header">
+        <img src={Logo} className="main-logo" alt="Logo" />
+        <nav className="Links">
+          <Link to='/MainGallery'>Main Gallery</Link>
+          <Link to='/MyGallery'> My Gallery</Link>
+        </nav>
+      </div>
+      <div className="mainVideo">
+        <video width="100%" autoPlay loop muted>
+          <source src={video} type="video/mp4" />
+        </video>
+      </div>
       <Routes>
-        <Route path='/MainGallery' element={allRecords.map(record => <MainGallery record={record} />)} />
+        <Route
+          path='/MainGallery'
+          element={<MainGallery />}
+        />
         <Route path='/MyGallery' element={<MyGallery />} />
       </Routes>
-      <div>
-        <img src={Logo} className="main-logo" />
-      </div>
-    </main>
 
+    </main>
   )
 }
 

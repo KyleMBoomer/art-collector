@@ -1,0 +1,24 @@
+.art-card {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    /* height: 100vh; */
+    align-content: center;
+    align-items: center;
+    border: 2px solid red;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.art-card img {
+    width: 30%;
+    height: 30%;
+    border: 2px solid red;
+    padding: 5px;
+    transition: transform 0.5s ease;
+}
+
+.art-card img:hover {
+    transform: scale(1.05);
+}

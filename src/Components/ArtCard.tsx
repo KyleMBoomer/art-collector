@@ -1,23 +1,17 @@
+import React from 'react'
 import '../CSS/ArtCard.css'
-import { useState } from 'react'
+import { Record, Image, ArtCardProps } from '../Utility/Types'
 
 
-interface Props {
-    record: {
-        image: string;
-        title: string;
-        description: string;
-    }
-}
-
-const ArtCard: React.FC<Props> = ({ record }, handleFavorite) => {
-    const { image, title, description } = record
-
+const ArtCard: React.FC<ArtCardProps> = ({ record }) => {
     return (
-        <div onChange={handleFavorite}>
-            <img src={image} />
-        </div>
-    )
-}
+        record.webImage && record.hasImage ? (
+            <div className="art-card">
+                <h3>{record.longTitle}</h3>
+                <img src={record.webImage.url} alt={record.longTitle} />
+            </div>
+        ) : null
+    );
+};
 
-export default ArtCard
+export default ArtCard; 
