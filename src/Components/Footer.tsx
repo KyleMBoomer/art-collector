@@ -10,25 +10,25 @@ const Footer: React.FC = () => {
             <div className='info-section'>
                 <h2 className='name'>Jordan Williamson</h2>
                     <img className='github' src={github} alt='GitHub-logo'/>
-                    <a href='https://github.com/JWill06' className='jordan-github'>@GitHub</a>
+                    <a href='https://github.com/JWill06' className='github-link'>@GitHub</a>
                     <img className='linkedin' src={linkedin} alt='LinkedIn-Logo'/>
-                    <a href='https://www.linkedin.com/in/jordan-williamson-a079b3271' className='jordan-linkedin'> @LinkedIn</a>
+                    <a href='https://www.linkedin.com/in/jordan-williamson-a079b3271' className='linkedin-link'> @LinkedIn</a>
                 <h2 className='name'>Kim Ewing</h2>
                     <img className='github' src={github} alt='GitHub-logo'/>
-                    <a href= 'https://github.com/kiewi16' className='kim-github'>@GitHub</a>
+                    <a href= 'https://github.com/kiewi16' className='github-link'>@GitHub</a>
                     <img className='linkedin' src={linkedin} alt='LinkedIn-Logo'/>
-                    <a href='https://www.linkedin.com/kimberlypekar' className="kim-linkedin"> @LinkedIn</a>
+                    <a href='https://www.linkedin.com/kimberlypekar' className='linkedin-link'> @LinkedIn</a>
                 <h2 className='name'>Kyle Boomer</h2>
                     <img className='github' src={github} alt='GitHub-logo'/>
-                    <a href='https://github.com/kylemboomer' className='kyle-github'>@GitHub</a>
+                    <a href='https://github.com/kylemboomer' className='github-link'>@GitHub</a>
                     <img className='linkedin' src={linkedin} alt='LinkedIn-Logo'/>
-                    <a href='https://www.linkedin.com/in/kylemboomer/' className="kyle-linkein"> @LinkedIn</a>
+                    <a href='https://www.linkedin.com/in/kylemboomer/' className='linkedin-link'> @LinkedIn</a>
                 <div className='seong-kang'>
                     <h2 className='name'>Seong Kang</h2>
                         <img className='github' src={github} alt='GitHub-logo'/>
-                        <a href='https://github.com/Sanghoro' className='seong-github'>@GitHub</a>
+                        <a href='https://github.com/Sanghoro' className='github-link'>@GitHub</a>
                         <img className='linkedin' src={linkedin} alt='LinkedIn-Logo'/>
-                        <a href='https://www.linkedin.com/in/seong-kang/' className="seong-linkedin"> @LinkedIn</a>
+                        <a href='https://www.linkedin.com/in/seong-kang/' className='linkedin-link'> @LinkedIn</a>
                 </div>
             </div>
         </footer>
