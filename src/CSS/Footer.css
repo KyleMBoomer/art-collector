@@ -1,0 +1,26 @@
+.footer {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.5rem;
+    bottom: 0; 
+}
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.github-link,
+.linkedin-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.github-link:hover,
+.linkedin-link:hover {
+    color: red;
+    transition: 0.5s;
+}
