@@ -1,27 +1,41 @@
 import React from 'react'
 import '../CSS/MainGallery.css'
 import ArtCard from './ArtCard'
+import { Record, Image } from '../Utility/Types'
+import { useEffect, useState } from 'react'
 
-interface Record {
-    image: object[]; // baseimageurl
-    title: string;
-    description: string;
-    dated: string;
-    creditline: string;
-    century: string;
-    dimensions: string;
-    id: number;
+interface MainGalleryProps {
+    records: Record[];
+    // handleFavorite: (id: number) => void;
 }
 
-interface Props {
-    record: Record;
-}
+const MainGallery: React.FC = () => {
+    const [allRecords, setAllRecords] = useState<Record[]>([]);
 
-const MainGallery: React.FC<Props> = ({ record }) => {
+    useEffect(() => {
+        fetch('https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=25')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.artObjects)
+                setAllRecords([...data.artObjects])
+            })
+            .catch(error => console.error('Failed to fetch records', error))
+    }, [])
+
+    const artCards = allRecords.map(record => {
+        return (
+            <div key={record.id}>
+                <ArtCard
+                    record={record}
+                />
+            </div>
+        )
+    })
+
     return (
-        <div>
+        <div className='main-gallery'>
             <h2>Main Gallery</h2>
-            < ArtCard record={record} />
+            {artCards}
         </div>
     )
 }
