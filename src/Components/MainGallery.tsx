@@ -6,14 +6,13 @@ import { useEffect, useState } from 'react'
 
 interface MainGalleryProps {
     records: Record[];
-    // handleFavorite: (id: number) => void;
 }
 
 const MainGallery: React.FC = () => {
     const [allRecords, setAllRecords] = useState<Record[]>([]);
 
     useEffect(() => {
-        fetch('https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=25')
+        fetch('https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=35')
             .then(response => response.json())
             .then(data => {
                 console.log(data.artObjects)

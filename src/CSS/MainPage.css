@@ -3,8 +3,8 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     background-image: './Assets/sampleVideo.mp4';
-    width: 98.8vw;
-    height: 100vh;
+    width: 100%;
+    height: 75vh;
     text-align: center;
     align-items: center;
     justify-items: center;
@@ -18,7 +18,7 @@
     grid-row: 1 / -1;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     z-index: -1;
     position: absolute;
 }
@@ -34,10 +34,12 @@
     align-items: center;
     justify-items: center;
     align-content: center;
+
     h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
+
     p {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
