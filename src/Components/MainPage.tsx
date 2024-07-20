@@ -10,7 +10,7 @@ const MainPage = () => {
                 </video>
             <div className='contentWrapper'>
                 <h1>Welcome to Art Collector</h1>
-                 <p className='mainPaigeText'>Art Collector is an application for Art lovers to look at different pictures of art provided by a Deutch  Art Museum Api! When an Art Lover sees an image they like they can favorite it and add it to their 'Gallery' to show their friends! </p>
+                 <p className='mainPageText'>Art Collector is an application for Art lovers to look at different pictures of art provided by a Deutch  Art Museum Api! When an Art Lover sees an image they like they can favorite it and add it to their 'Gallery' to show their friends! </p>
             </div>
         </div>
     )
