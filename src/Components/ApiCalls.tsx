@@ -1,15 +1,13 @@
-import { useState } from 'react'
-
-const getArtData = () => {
-    // fetch('https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=50')
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         console.log(data.artObjects)
-    //         setAllRecords([data.artObjects])
-    //     })
-    //     .catch(error => console.error('Failed to fetch records', error))
+export const fetchArtRecords = async (): Promise<any> => {
+    try { 
+        const res = await fetch('https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=25')
+        if (!res.ok) {
+            throw new Error('The ring was not answered :(')
+        }
+        const data = await res.json()
+        return data.artObjects
+    } catch (error) {
+        console.error('Failed to fetch records.', error)
+        throw error 
+    }
 }
-
-
-
-export default getArtData
