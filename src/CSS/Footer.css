@@ -17,6 +17,10 @@
     padding: 0.5rem;
 }
 
+.name:hover {
+    text-shadow: 0 0 10px rgba(246, 205, 21, 1);
+}
+
 .info-section {
     display: flex;
     justify-content: center;
