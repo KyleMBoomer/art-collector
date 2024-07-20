@@ -1,15 +1,19 @@
 import React from 'react'
 import '../CSS/MyGallery.css'
 import ArtCard from './ArtCard'
+import { useFavorites } from './Favorites'
 
-type Props = {}
+const MyGallery: React.FC = () => {
+    const [favoriteRecords] = useFavorites()
 
-const MyGallery = (props: Props) => {
     return (
-        <div>
-            <h2>My Gallery</h2>
+        <div className="my-gallery">
+            <h2>Favorites</h2>
+            {favoriteRecords.map((record) => (
+                <ArtCard key={record.id} record={record} />
+            ))}
         </div>
-    )
-}
+    );
+};
 
-export default MyGallery
+export default MyGallery;
