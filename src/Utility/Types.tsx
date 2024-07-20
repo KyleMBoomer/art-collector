@@ -13,6 +13,6 @@ export interface Image {
 
 export interface ArtCardProps {
     record: Record;
-    // handleFavorite: (id: number) => void;
+    handleFavorite: (id: string) => void;
 }
 
