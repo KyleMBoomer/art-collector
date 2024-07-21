@@ -21,19 +21,24 @@ const MainGallery: React.FC = () => {
         loadRecords()
     }, [])
 
+    const artCards = allRecords.map(record => {
+        return (
+            <div key={record.id}>
+                <ArtCard
+                    record={record}
+                />
+            </div>
+        )
+    })
 
     return (
         <div className='main-gallery'>
-            <h2 className="MainGallery-Title">Main Gallery</h2>
-            {error ? (
-                <div className="error-message">{error}</div>
-            ) : (
-                allRecords.map(record => (
-                    <div key={record.id} className='art-card'>
-                        <ArtCard record={record} />
-                    </div>
-                ))
-            )}
+            <div className='header-wrapper'>
+                <h1 className="MainGallery-Title">Main Gallery</h1>
+            </div>
+            {error ? <p className="error-message">{error}</p> : artCards}
+
+
         </div>
     )
 }

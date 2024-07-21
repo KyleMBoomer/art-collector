@@ -1,7 +1,8 @@
 .main-gallery {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    /* margin: 5%; */
 }
 
 .MainGallery-Title {
