@@ -1,21 +1,17 @@
 import React from 'react'
 import '../CSS/MainGallery.css'
 import ArtCard from './ArtCard'
-import { Record, Image } from '../Utility/Types'
+import { Record } from '../Utility/Types'
 import { useEffect, useState } from 'react'
-import MyGallery from './MyGallery'
+// import MyGallery from './MyGallery'
 import { useFavorites } from './Favorites'
-
-interface MainGalleryProps {
-    records: Record[];
-    handleFavorite: (record) => void;
-}
+import { FavoriteRecord } from '../Utility/Types'
 
 const MainGallery: React.FC = () => {
     const [allRecords, setAllRecords] = useState<Record[]>([]);
-    const [favoriteRecords, setFavoriteRecords] = useFavorites<Record[]>([]);
+    const [favoriteRecords, setFavoriteRecords] = useFavorites();
 
-    function handleFavorite(record) {
+    function handleFavorite(record: Record) {
         const isAlreadyFavorited = favoriteRecords.some(favoriteRecord => favoriteRecord.id === record.id)
 
         if (isAlreadyFavorited) {
