@@ -9,7 +9,9 @@ const ArtCard: React.FC<ArtCardProps> = ({ record }) => {
             <div className="art-card">
                 <h3>{record.longTitle}</h3>
                 <img src={record.webImage.url} alt={record.longTitle} />
-                <button className="favorite-button">+</button>
+                <button className="favorite-button">
+                    <span>+</span>
+                </button>
             </div>
         ) : null
     );

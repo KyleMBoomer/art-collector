@@ -1,6 +1,6 @@
 export const fetchArtRecords = async (): Promise<any> => {
     try { 
-        const res = await fetch('https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=25')
+        const res = await fetch('https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps')
         if (!res.ok) {
             throw new Error('The ring was not answered :(')
         }
