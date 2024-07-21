@@ -7,7 +7,7 @@ const FavoriteArtCard: React.FC<FavoriteArtCardProps> = ({ favoriteRecord }) => 
         <div className="favorite-art-card">
             <h3>{favoriteRecord.longTitle}</h3>
             <img src={favoriteRecord.webImage.url} alt={favoriteRecord.longTitle} />
-            <button className="favorite-button">+</button>
+            <button className="favorite-button">-</button>
         </div>
         )
 }
