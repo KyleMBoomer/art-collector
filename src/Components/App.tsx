@@ -19,7 +19,7 @@ const App: React.FC = () => {
         <Route path='/' element={<MainPage />} />   
         <Route path='/MainGallery'element={<MainGallery />} />
         <Route path='/MyGallery' element={<MyGallery />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path='*' element={<PageNotFound />} />
       </Routes>
       </FavoriteProvider>
       <Footer />
