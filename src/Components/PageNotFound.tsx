@@ -1,7 +1,8 @@
 import '../CSS/PageNotFound.css'
 import { Link } from "react-router-dom";
 
-function PageNotFound() {
+
+const PageNotFound: React.FC = () => {
     return (
         <div className="page-not-found">
             <h1>404-Page Not Found!</h1>
