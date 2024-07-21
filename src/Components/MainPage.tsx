@@ -1,5 +1,4 @@
 import '../CSS/MainPage.css'
-
 const video = require('../Assets/sampleVideo1.mp4'); 
 
 const MainPage = () => {
@@ -16,4 +15,4 @@ const MainPage = () => {
     )
 }
 
-export default MainPage;
+export default MainPage
