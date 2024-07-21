@@ -1,6 +1,11 @@
-import React from 'react'
-
 export interface Record {
+    id: string;
+    webImage: Image;
+    longTitle: string;
+    hasImage: boolean;
+}
+
+export interface FavoriteRecord {
     id: string;
     webImage: Image;
     longTitle: string;
@@ -11,8 +16,16 @@ export interface Image {
     url: string;
 }
 
+// export interface MainGalleryProps {
+//     records: Record[];
+//     handleFavorite: (record: Record) => void; 
+// }
+
 export interface ArtCardProps {
     record: Record;
-    handleFavorite: (id: string) => void;
+    handleFavorite: (record: Record) => void; 
 }
 
+export interface FavoriteArtCardProps {
+    favoriteRecord: FavoriteRecord;
+}
