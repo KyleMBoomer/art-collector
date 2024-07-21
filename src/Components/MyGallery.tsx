@@ -13,7 +13,7 @@ const MyGallery: React.FC = () => {
                 <ArtCard key={record.id} record={record} />
             ))}
         </div>
-    );
-};
+    )
+}
 
 export default MyGallery;
