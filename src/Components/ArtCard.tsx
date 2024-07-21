@@ -1,7 +1,6 @@
 import React from 'react'
 import '../CSS/ArtCard.css'
-import { Record, Image, ArtCardProps } from '../Utility/Types'
-
+import { ArtCardProps } from '../Utility/Types'
 
 const ArtCard: React.FC<ArtCardProps> = ({ record, handleFavorite }) => {
     return (
