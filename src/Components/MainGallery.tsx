@@ -17,6 +17,7 @@ const MainGallery: React.FC = () => {
     const [allRecords, setAllRecords] = useState<Record[]>([]);
     const [error, setError] = useState<string | null>(null);
     const [favoriteRecords, setFavoriteRecords] = useFavorites();
+    const [isLoading, setLoading] = useState(false)
 
     function handleFavorite(record: Record) {
         const isAlreadyFavorited = favoriteRecords.some(favoriteRecord => favoriteRecord.id === record.id)
@@ -31,15 +32,17 @@ const MainGallery: React.FC = () => {
     useEffect(() => {
         const loadRecords = async () => {
             try {
+                setLoading(true)
                 const paintings = await fetchArtRecords()
                 setAllRecords(paintings)
+                setLoading(false)
             } catch (error) {
-                setError('Failed to fetch records.')
+                setError('Failed to fetch records. 😞')
             }
         }
         loadRecords()
     }, [])
-
+console.log(allRecords)
 
     const artCards = allRecords.map(record => {
         return (
@@ -55,10 +58,11 @@ const MainGallery: React.FC = () => {
     return (
         <div className='main-gallery'>
             <div className='headerWrapper'>
-                <h2 className="MainGallery-Title">Main Gallery</h2>
+                <h1 className="MainGallery-Title">Main Gallery</h1>
             </div>
             <div className='card-wrapper'>
-                {error ? <p className="error-message">{error}</p> : artCards}
+                {isLoading ? <p className='loadingText'>...Loading Art</p> : artCards}
+                {error && <p className="error-message">{error}</p>}
             </div>
         </div>
     )

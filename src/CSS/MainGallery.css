@@ -1,8 +1,10 @@
 .main-gallery {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    /* margin: 5%; */
+    text-align: center;
+    justify-content: center;
 }
 
 .MainGallery-Title {
@@ -14,6 +16,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.loadingText {
+    font-size: 50px;
 }
 
 
