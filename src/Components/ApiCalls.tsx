@@ -7,6 +7,7 @@ export const fetchArtRecords = async (): Promise<any> => {
         }
         const data = await res.json()
         return data.artObjects
+
     } catch (error) {
         console.error('Failed to fetch records.', error)
         throw error
