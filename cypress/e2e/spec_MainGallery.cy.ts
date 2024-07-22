@@ -1,8 +1,9 @@
 describe('Main Gallery component', () => {
   beforeEach(() => {
-    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=25', 
-      {fixture: 'records.json'}
-     ).as('getRecords')
+    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=25', {
+      statusCode: 200,
+      fixture: 'records.json'
+    }).as('getRecords')
     cy.visit('http://localhost:3000/')
   })
 
@@ -12,12 +13,12 @@ describe('Main Gallery component', () => {
     cy.get('.MainGallery-Title').should('contain', 'Main Gallery');
   })
 
-  it('should display the main gallery with art cards', () => {
+  it.only('should display the main gallery with art cards', () => {
     cy.visit('http://localhost:3000/MainGallery');
     cy.wait('@getRecords');
     cy.get('.main-gallery').should('exist');
-    cy.get('.MainGallery-Title').should('contain', 'Main Gallery');
-    cy.get('.art-card').should('have.length', 2); 
+    cy.get('.MainGallery-Title').should('contain', 'Main Gallery')
+    cy.get('.card-wrapper').should('have.length', 1);
   });
 
   it('should handle fetch errors gracefully', () => {

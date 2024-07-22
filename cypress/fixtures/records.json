@@ -1,21 +1,37 @@
 {
   "artObjects": [
     {
-      "id": "1",
-      "title": "Mock Art Piece 1",
-      "principalOrFirstMaker": "Artist 1",
+      "links": {
+        "self": "http://www.rijksmuseum.nl/api/en/collection/BK-1978-792",
+        "web": "http://www.rijksmuseum.nl/en/collection/BK-1978-792"
+      },
+      "id": "en-BK-1978-792",
+      "objectNumber": "BK-1978-792",
+      "title": "Man’s Cap",
+      "hasImage": true,
+      "principalOrFirstMaker": "anonymous",
+      "longTitle": "Man’s Cap, anonymous, c. 1750",
+      "showImage": true,
+      "permitDownload": true,
       "webImage": {
-        "url": "https://example.com/image1.jpg"
-      }
-    },
-    {
-      "id": "2",
-      "title": "Mock Art Piece 2",
-      "principalOrFirstMaker": "Artist 2",
-      "webImage": {
-        "url": "https://example.com/image2.jpg"
-      }
+        "guid": "6f0bec2d-4e70-4ef2-a86f-06fe384348af",
+        "offsetPercentageX": 0,
+        "offsetPercentageY": 0,
+        "width": 2236,
+        "height": 3000,
+        "url": "https://lh3.ggpht.com/pjxQWOsfMIBV2Crg1il3CAbfsa0BjvE7VqvdZTPx6vRRsXCOv2JVhzlCDf3SdygolDK-XUGoK0fePKCJBwCVrvxuPRI=s0"
+      },
+      "headerImage": {
+        "guid": "674fee04-0398-430e-b109-c514d06d30dc",
+        "offsetPercentageX": 0,
+        "offsetPercentageY": 0,
+        "width": 1920,
+        "height": 460,
+        "url": "https://lh4.ggpht.com/ywMsgGP9MB0eU6eDE6AwLa8SvBygPMwC-lIFZFu4YlJ2YDoYvFUkZPOmEZUzswwMReYrvQp_f-PITu-xrEPu2DkchJSi=s0"
+      },
+      "productionPlaces": [
+        "Netherlands"
+      ]
     }
   ]
 }
-
