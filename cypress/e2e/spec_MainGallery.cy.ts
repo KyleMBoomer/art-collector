@@ -18,7 +18,7 @@ describe('Main Gallery component', () => {
     cy.wait('@getRecords');
     cy.get('.main-gallery').should('exist');
     cy.get('.MainGallery-Title').should('contain', 'Main Gallery')
-    cy.get('.card-wrapper').should('have.length', 1);
+    cy.get('.art-card').should('have.length', 2);
   });
 
   it('should handle fetch errors gracefully', () => {

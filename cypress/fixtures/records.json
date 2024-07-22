@@ -32,6 +32,39 @@
       "productionPlaces": [
         "Netherlands"
       ]
+    },
+    {
+      "links": {
+        "self": "http://www.rijksmuseum.nl/api/en/collection/NG-412",
+        "web": "http://www.rijksmuseum.nl/en/collection/NG-412"
+      },
+      "id": "en-NG-412",
+      "objectNumber": "NG-412",
+      "title": "Diorama of Government Square in Paramaribo",
+      "hasImage": true,
+      "principalOrFirstMaker": "Gerrit Schouten",
+      "longTitle": "Diorama of Government Square in Paramaribo, Gerrit Schouten, 1812",
+      "showImage": true,
+      "permitDownload": true,
+      "webImage": {
+        "guid": "b6ed0d9f-6c11-4db6-a3a8-2de70086c0bf",
+        "offsetPercentageX": 0,
+        "offsetPercentageY": 0,
+        "width": 3000,
+        "height": 1994,
+        "url": "https://lh6.ggpht.com/e8VfvhzzL5KDyDLhpJjZGZ_jXVNbxjgBG4I1GdKE9r5vt8qaPcXSfe3Oj7JbibQFbL3aH1V--qjeHhvWn78nAzsNGw=s0"
+      },
+      "headerImage": {
+        "guid": "43620707-f5ca-485b-a334-a4907a3f9bdf",
+        "offsetPercentageX": 0,
+        "offsetPercentageY": 0,
+        "width": 1920,
+        "height": 460,
+        "url": "https://lh5.ggpht.com/4c8O2x0Ws3NRvO1ifV38ssoKxBTLyi8btjrX43kxNJC0AsgYyQst9lhSBl9hWWobC6_zWJpP1j3D5xQgzalbkq1VIyY=s0"
+      },
+      "productionPlaces": [
+        "Suriname"
+      ]
     }
   ]
 }
