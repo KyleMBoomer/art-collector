@@ -14,21 +14,21 @@ interface MainGalleryProps {
 }
 
 const MainGallery: React.FC = () => {
-   const [allRecords, setAllRecords] = useState<Record[]>([]);
-   const [error, setError] = useState<string | null>(null);
-   const [favoriteRecords, setFavoriteRecords] = useFavorites();
+    const [allRecords, setAllRecords] = useState<Record[]>([]);
+    const [error, setError] = useState<string | null>(null);
+    const [favoriteRecords, setFavoriteRecords] = useFavorites();
 
-   function handleFavorite(record: Record) {
+    function handleFavorite(record: Record) {
         const isAlreadyFavorited = favoriteRecords.some(favoriteRecord => favoriteRecord.id === record.id)
 
         if (isAlreadyFavorited) {
             return setFavoriteRecords(favoriteRecords.filter(favoriteRecord => favoriteRecord.id !== record.id))
         } else {
-            setFavoriteRecords([...favoriteRecords, record])    
+            setFavoriteRecords([...favoriteRecords, record])
         }
     }
 
- useEffect(() => {
+    useEffect(() => {
         const loadRecords = async () => {
             try {
                 const paintings = await fetchArtRecords()
@@ -45,8 +45,8 @@ const MainGallery: React.FC = () => {
         return (
             <div key={record.id}>
                 <ArtCard
-                record={record}
-                handleFavorite={handleFavorite}
+                    record={record}
+                    handleFavorite={handleFavorite}
                 />
             </div>
         )
@@ -58,8 +58,10 @@ const MainGallery: React.FC = () => {
                 <h2 className="MainGallery-Title">Main Gallery</h2>
             </div>
             <div className='card-wrapper'>
-            {error ? <p className="error-message">{error}</p> : artCards}
+                {error ? <p className="error-message">{error}</p> : artCards}
             </div>
         </div>
     )
 }
+
+export default MainGallery
