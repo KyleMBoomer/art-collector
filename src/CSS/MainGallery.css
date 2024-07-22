@@ -1,10 +1,23 @@
 .main-gallery {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    /* margin: 5%; */
 }
 
 .MainGallery-Title {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
+    font-size: 4rem;
 }
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+    
+    
+
+

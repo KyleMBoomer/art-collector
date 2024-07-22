@@ -1,6 +1,6 @@
 import '../CSS/MainPage.css'
 
-const video = require('../Assets/sampleVideo1.mp4');
+const video = require('../Assets/sampleVideo1.mp4'); 
 
 const MainPage = () => {
     return (
@@ -10,10 +10,11 @@ const MainPage = () => {
             </video>
             <div className='contentWrapper'>
                 <h1>Welcome to Art Collector</h1>
-                <p className='mainPageText'>Art Collector is an application for Art lovers to look at different pictures of art provided by a Deutch  Art Museum API! When an Art Lover sees an image they like they can favorite it and add it to their 'Gallery' to show their friends! </p>
+                <p className='mainPageText'>Art Collector is an application for Art lovers to look at different pictures of art provided by a Dutch Art Museum Api! When an Art Lover sees an image they like they can favorite it and add it to their 'Gallery' to show their friends! 
+              </p>
             </div>
         </div>
     )
 }
 
-export default MainPage;
+export default MainPage
