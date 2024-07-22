@@ -63,5 +63,3 @@ const MainGallery: React.FC = () => {
         </div>
     )
 }
-
-export default MainGallery
