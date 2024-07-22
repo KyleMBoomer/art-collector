@@ -4,14 +4,11 @@ import ArtCard from './ArtCard'
 import { useEffect, useState } from 'react'
 import { Record } from '../Utility/Types'
 import { useFavorites } from './Favorites'
-import { FavoriteRecord } from '../Utility/Types'
 import { fetchArtRecords } from './ApiCalls'
 
-
-interface MainGalleryProps {
-    records: Record[];
-    // handleFavorite: (id: number) => void;
-}
+// interface MainGalleryProps {
+//     records: Record[];
+// }
 
 const MainGallery: React.FC = () => {
     const [allRecords, setAllRecords] = useState<Record[]>([]);
@@ -22,9 +19,7 @@ const MainGallery: React.FC = () => {
     function handleFavorite(record: Record) {
         const isAlreadyFavorited = favoriteRecords.some(favoriteRecord => favoriteRecord.id === record.id)
 
-        if (isAlreadyFavorited) {
-            return setFavoriteRecords(favoriteRecords.filter(favoriteRecord => favoriteRecord.id !== record.id))
-        } else {
+        if (!isAlreadyFavorited) {
             setFavoriteRecords([...favoriteRecords, record])
         }
     }
@@ -42,7 +37,6 @@ const MainGallery: React.FC = () => {
         }
         loadRecords()
     }, [])
-console.log(allRecords)
 
     const artCards = allRecords.map(record => {
         return (
