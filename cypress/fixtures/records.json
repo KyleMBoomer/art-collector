@@ -1,21 +1,70 @@
 {
   "artObjects": [
     {
-      "id": "1",
-      "title": "Mock Art Piece 1",
-      "principalOrFirstMaker": "Artist 1",
+      "links": {
+        "self": "http://www.rijksmuseum.nl/api/en/collection/BK-1978-792",
+        "web": "http://www.rijksmuseum.nl/en/collection/BK-1978-792"
+      },
+      "id": "en-BK-1978-792",
+      "objectNumber": "BK-1978-792",
+      "title": "Man’s Cap",
+      "hasImage": true,
+      "principalOrFirstMaker": "anonymous",
+      "longTitle": "Man’s Cap, anonymous, c. 1750",
+      "showImage": true,
+      "permitDownload": true,
       "webImage": {
-        "url": "https://example.com/image1.jpg"
-      }
+        "guid": "6f0bec2d-4e70-4ef2-a86f-06fe384348af",
+        "offsetPercentageX": 0,
+        "offsetPercentageY": 0,
+        "width": 2236,
+        "height": 3000,
+        "url": "https://lh3.ggpht.com/pjxQWOsfMIBV2Crg1il3CAbfsa0BjvE7VqvdZTPx6vRRsXCOv2JVhzlCDf3SdygolDK-XUGoK0fePKCJBwCVrvxuPRI=s0"
+      },
+      "headerImage": {
+        "guid": "674fee04-0398-430e-b109-c514d06d30dc",
+        "offsetPercentageX": 0,
+        "offsetPercentageY": 0,
+        "width": 1920,
+        "height": 460,
+        "url": "https://lh4.ggpht.com/ywMsgGP9MB0eU6eDE6AwLa8SvBygPMwC-lIFZFu4YlJ2YDoYvFUkZPOmEZUzswwMReYrvQp_f-PITu-xrEPu2DkchJSi=s0"
+      },
+      "productionPlaces": [
+        "Netherlands"
+      ]
     },
     {
-      "id": "2",
-      "title": "Mock Art Piece 2",
-      "principalOrFirstMaker": "Artist 2",
+      "links": {
+        "self": "http://www.rijksmuseum.nl/api/en/collection/NG-412",
+        "web": "http://www.rijksmuseum.nl/en/collection/NG-412"
+      },
+      "id": "en-NG-412",
+      "objectNumber": "NG-412",
+      "title": "Diorama of Government Square in Paramaribo",
+      "hasImage": true,
+      "principalOrFirstMaker": "Gerrit Schouten",
+      "longTitle": "Diorama of Government Square in Paramaribo, Gerrit Schouten, 1812",
+      "showImage": true,
+      "permitDownload": true,
       "webImage": {
-        "url": "https://example.com/image2.jpg"
-      }
+        "guid": "b6ed0d9f-6c11-4db6-a3a8-2de70086c0bf",
+        "offsetPercentageX": 0,
+        "offsetPercentageY": 0,
+        "width": 3000,
+        "height": 1994,
+        "url": "https://lh6.ggpht.com/e8VfvhzzL5KDyDLhpJjZGZ_jXVNbxjgBG4I1GdKE9r5vt8qaPcXSfe3Oj7JbibQFbL3aH1V--qjeHhvWn78nAzsNGw=s0"
+      },
+      "headerImage": {
+        "guid": "43620707-f5ca-485b-a334-a4907a3f9bdf",
+        "offsetPercentageX": 0,
+        "offsetPercentageY": 0,
+        "width": 1920,
+        "height": 460,
+        "url": "https://lh5.ggpht.com/4c8O2x0Ws3NRvO1ifV38ssoKxBTLyi8btjrX43kxNJC0AsgYyQst9lhSBl9hWWobC6_zWJpP1j3D5xQgzalbkq1VIyY=s0"
+      },
+      "productionPlaces": [
+        "Suriname"
+      ]
     }
   ]
 }
-

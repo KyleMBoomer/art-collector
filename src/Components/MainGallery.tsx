@@ -40,6 +40,7 @@ const MainGallery: React.FC = () => {
         loadRecords()
     }, [])
 
+    console.log('records<<<', allRecords)
 
     const artCards = allRecords.map(record => {
         return (
