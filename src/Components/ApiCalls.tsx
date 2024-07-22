@@ -1,4 +1,5 @@
 export const fetchArtRecords = async (): Promise<any> => {
+
     try {
         const res = await fetch('https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=25')
         if (!res.ok) {
