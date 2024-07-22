@@ -19,7 +19,6 @@ const MyGallery: React.FC = () => {
         <div className='my-gallery'>
             <h2 className="MyGallery-Title">My Gallery</h2>
             {favoriteArtCards}
-            {/* <MyGallery favoriteRecords={favoriteRecords} /> */}
         </div>
     )
 }
