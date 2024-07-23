@@ -35,4 +35,7 @@ Used Github Project for Pre-planning. [here](https://github.com/users/KyleMBoome
 * Win 2
 
 ## Contributions
+[Jordan Williamson - LinkedIn](https://www.linkedin.com/in/jordan-williamson-a079b3271/)
+[Kim Ewing - LinkedIn](https://www.linkedin.com/in/kimberlypekar/)
+[Kyle Boomer - LinkedIn](https://www.linkedin.com/in/kylemboomer/)
 [Seong Kang - LinkedIn](https://www.linkedin.com/in/seong-kang/)
