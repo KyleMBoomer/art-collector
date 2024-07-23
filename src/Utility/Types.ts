@@ -23,6 +23,7 @@ export interface MainGalleryProps {
 export interface ArtCardProps {
     record: Record;
     handleFavorite: (record: Record) => void; 
+    favorited?: boolean;
 }
 
 export interface FavoriteArtCardProps {

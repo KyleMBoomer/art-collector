@@ -1,12 +1,10 @@
-
-
 .my-gallery {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin:1rem;
-    min-height: 31.25rem;
+    min-height: 61rem;
 }
 
 .navWrap {
@@ -19,22 +17,25 @@
 
 p {
     margin: 1rem;
+    font-size: 40px;
+    margin-bottom: 5rem;
 }
 
 .backToMain {
-    width: 20rem;
-    height: 2.5rem;
+    width: 30rem;
+    height: 3.5rem;
     background-color: black;
     border-radius: 2.5rem;
+    padding: 5px;
 }
 
 .mainGalleryLink {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     color: white;
 }
 
 .MyGallery-Title {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
+    font-size: 3.5rem;
 }

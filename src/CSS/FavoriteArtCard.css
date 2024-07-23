@@ -1,13 +1,23 @@
 .favorite-art-card {
     display: flex;
     flex-direction: column;
-    width: 50vw;
-    align-content: center;
-    align-items: center;
-    border: .175rem solid rgb(228, 228, 228);
     justify-content: center;
-    margin: .75rem;
-    padding: .75rem;
+    align-items: center;
+    width: 25vw;
+    height: 40vh;
+    max-width: 25vw;
+    max-height: 40vh;
+    border: 2px solid rgb(228, 228, 228);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    text-wrap: wrap;
+
+    h3 {
+        font-size: 1.85rem;
+    }
 }
 
 .favorite-art-card:hover {
