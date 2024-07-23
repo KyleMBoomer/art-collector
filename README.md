@@ -8,9 +8,15 @@ The “Art Collector” project is built with TypeScript and React, it allows yo
 
 ## Screenshots
 ### Home Page
-![Screenshot 2024-07-22 at 8 38 02 PM](https://github.com/user-attachments/assets/8a9e5acd-9976-4488-a3b9-c9b5b6090e19)
+![Screenshot 2024-07-23 at 1 17 05 PM](https://github.com/user-attachments/assets/26c600dd-6f98-481f-b0fa-8729b572a21d)
+
 ### Main Gallery
-![Screenshot 2024-07-22 at 8 38 17 PM](https://github.com/user-attachments/assets/fb8164ee-1ddc-47aa-8185-e5f8a710ed51)
+![Screenshot 2024-07-23 at 1 17 24 PM](https://github.com/user-attachments/assets/a53a4410-64a9-403c-ba0d-d4a20a697f0d)
+
+### My Gallery
+![Screenshot 2024-07-23 at 1 18 07 PM](https://github.com/user-attachments/assets/dd7944c4-ddaa-4045-9676-57eb6e664458)
+
+
 
 ## Installation Instructions
 - [ ]  If you have not already, clone down the repository onto your local machine using "git clone https://github.com/KyleMBoomer/art-collector" Once cloned down, cd into the direction and install dependencies by running "npm install"
