@@ -52,7 +52,7 @@ const MainGallery: React.FC = () => {
     return (
         <div className='main-gallery'>
             <div className='headerWrapper'>
-                <h1 className="MainGallery-Title">Main Gallery</h1>
+                <h2 className="MainGallery-Title">Main Gallery</h2>
             </div>
             <div className='card-wrapper'>
                 {isLoading ? <p className='loadingText'>...Loading Art</p> : artCards}
