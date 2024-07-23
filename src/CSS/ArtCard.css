@@ -36,8 +36,8 @@
 
 .favorite-button {
     position: absolute;
-    bottom: 25px;
-    right: 30px;
+    bottom: 1.75rem;
+    right: 1.9rem;
     border: none;
     width: 2rem;
     height: 2rem;
