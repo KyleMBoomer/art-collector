@@ -4,6 +4,7 @@
 The “Art Collector” project is built with TypeScript and React, it allows you to browse artworks from the Rijksmuseum in the Netherlands, learn about them, and even create your own gallery by saving your favorites. Designed with accessibility in mind, it ensures that everyone can enjoy the content. Additionally, it is thoroughly tested with Cypress, and our team has implemented robust error handling methods to address any issues that may arise.
 
 ## Preview
+![gif-1](https://github.com/user-attachments/assets/d36bd245-851b-4651-8391-b555d4ccfbf7)
 
 
 ## Screenshots
