@@ -1,4 +1,4 @@
-describe('Art Card Component', () => {
+describe('Art Card Tests', () => {
   beforeEach(() => {
     cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=25',
       { fixture: 'records.json' }
