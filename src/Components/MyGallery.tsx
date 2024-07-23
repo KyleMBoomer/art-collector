@@ -22,8 +22,10 @@ const MyGallery: React.FC = () => {
             <h2 className="MyGallery-Title">My Gallery</h2>
             {favoriteArtCards.length > 0 ? (favoriteArtCards) : (
                 <div>
-                    <p>No favorites yet</p>
-                    <Link to="/MainGallery">Choose your favorites now!</Link>
+                    <p>No favorites yet! 😞</p>
+                    <button className='backToMain'>
+                    <Link to="/MainGallery" className='mainGalleryLink'>Choose your favorites now!</Link>
+                    </button>
                 </div>
             )}
         </div>

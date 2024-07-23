@@ -55,7 +55,7 @@ const MainGallery: React.FC = () => {
                 <h2 className="MainGallery-Title">Main Gallery</h2>
             </div>
             <div className='card-wrapper'>
-                {isLoading ? <p className='loadingText'>...Loading Art</p> : artCards}
+                {isLoading ? <p className='loadingText'>...loading Art 🎭🖼️</p> : artCards}
                 {error && <p className="error-message">{error}</p>}
             </div>
         </div>
