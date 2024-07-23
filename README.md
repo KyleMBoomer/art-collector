@@ -20,8 +20,16 @@ The “Art Collector” project is built with TypeScript and React, it allows yo
 
 
 ## Installation Instructions
-- [ ]  If you have not already, clone down the repository onto your local machine using "git clone https://github.com/KyleMBoomer/art-collector" Once cloned down, cd into the direction and install dependencies by running "npm install"
+### To start the app
+- [ ]  Clone down the repository onto your local machine using "git clone https://github.com/KyleMBoomer/art-collector"
+- [ ]  Once cloned down, cd into the direction and install dependencies by running "npm install"
 - [ ]  Run "npm start" then visit the local host to view the application in your browser.
+
+### To test with Cypress
+- [ ]  Run "npm run cy:open #" then visit the local host to view the application in your browser.
+- [ ]  Click E2E testing
+- [ ]  Click Start E2E Testing in Chrome
+
 
 ## Pre-Planning
 Used Github Project for Pre-planning. [here](https://github.com/users/KyleMBoomer/projects/2)
