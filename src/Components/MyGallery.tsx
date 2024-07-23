@@ -19,9 +19,9 @@ const MyGallery: React.FC = () => {
     })
     return (
         <div className="my-gallery">
-            <h2 className="MyGallery-Title">My Gallery</h2>
+            <h1 className="MyGallery-Title">My Gallery</h1>
             {favoriteArtCards.length > 0 ? (favoriteArtCards) : (
-                <div>
+                <div className="navWrap">
                     <p>No favorites yet! 😞</p>
                     <button className='backToMain'>
                     <Link to="/MainGallery" className='mainGalleryLink'>Choose your favorites now!</Link>
