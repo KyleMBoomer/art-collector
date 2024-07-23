@@ -1,4 +1,4 @@
-describe('MainPage Tests', () => {
+describe('Main Page Tests', () => {
   beforeEach(() => {
     cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=25',
       { fixture: 'records.json' }
@@ -6,14 +6,20 @@ describe('MainPage Tests', () => {
     cy.visit('http://localhost:3000/')
   })
 
-  it('should display the welcome message', () => {
-    cy.contains('Welcome to Art Collector').should('be.visible')
-  })
+  // it('should display the welcome message', () => {
+  //   cy.contains('Welcome to Art Collector').should('be.visible')
+  // })
 
-  it('should display the video and welcome message', () => {
-    cy.get('.mainPageWrapper').should('exist');
-    cy.get('.contentWrapper h1').should('contain', 'Welcome to Art Collector');
-  });
+  it('should display a navigation bar with a logo and two links, a video, a welcome message, and a footer. ', () => {
+    cy.get('.Header').should('exist')
+    cy.get('.main-logo').should('exist')
+    cy.get('.Links').should('exist')
+    cy.get('.MainGallery-button').should('contain', 'Main Gallery')
+    cy.get('.MyGallery-button').should('contain', 'My Gallery')
+    cy.get('.mainPageWrapper').should('exist')
+    cy.get('.contentWrapper h1').should('contain', 'Welcome to Art Collector')
+    cy.get('.footer').should('exist')
+  })
 
   it('should have a looping video playing', () => {
     cy.get('#backgroundVideo').should('have.prop', 'loop', true)
