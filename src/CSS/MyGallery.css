@@ -1,0 +1,17 @@
+.backToMain {
+    width: 20rem;
+    height: 2.5rem;
+    background-color: black;
+    border-radius: 2.5rem;
+}
+
+.mainGalleryLink {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.MyGallery-Title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}

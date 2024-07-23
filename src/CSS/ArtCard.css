@@ -12,7 +12,11 @@
     padding: 10px;
     text-align: center;
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
+
+    h3 {
+        font-size: 25px;
+    }
 }
 
 .art-card:hover {
@@ -20,8 +24,8 @@
 }
 
 .art-card img {
-    max-width: 20vw; 
-    max-height: 27vh; 
+    max-width: 20vw;
+    max-height: 27vh;
     padding: 15px;
     transition: transform 0.5s ease;
 }
@@ -51,15 +55,15 @@
 }
 
 .favorite-button:hover::after {
-    content: 'Add to My Gallery'; 
+    content: 'Add to My Gallery';
     font-size: .8rem;
     background-color: black;
     color: white;
     padding: 10px;
     border-radius: 5px;
     white-space: nowrap;
-    position: absolute; 
-    top: 40%; 
+    position: absolute;
+    top: 40%;
     right: 1.5rem;
-    z-index: 2; 
+    z-index: 2;
 }
