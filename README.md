@@ -27,7 +27,7 @@ Used Github Project for Pre-planning. [here](https://github.com/users/KyleMBoome
   * Utilize PR templates and a project board for efficient workflow management.
   
 ## Challenges
-  * Challenge 1
+  * Initially, our plan was to utilize the Harvard Museum’s API. However, we encountered multiple issues that led to the generation of inconsistent data sets. As a result, our team convened and dedicated several hours to researching and identifying a more reliable museum API.
   * Challenge 2
   
 ## Wins
