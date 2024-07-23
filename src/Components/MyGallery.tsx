@@ -1,19 +1,24 @@
 import React from 'react'
 import '../CSS/MyGallery.css'
-import ArtCard from './ArtCard'
 import { useFavorites } from './Favorites'
 import FavoriteArtCard from './FavoriteArtCard'
 import { Link } from "react-router-dom";
 
 
 const MyGallery: React.FC = () => {
-    const [favoriteRecords] = useFavorites()
+    const [favoriteRecords, setFavoriteRecords] = useFavorites()
+
+    function handleDelete(id:string) {
+        const deleteFavorite = favoriteRecords.filter(record => record.id !== id)
+        setFavoriteRecords(deleteFavorite)
+    }
 
     const favoriteArtCards = favoriteRecords.map(favoriteRecord => {
         return (
             <FavoriteArtCard
                 key={favoriteRecord.id}
                 favoriteRecord={favoriteRecord}
+                handleDelete={handleDelete}
             />
         )
     })

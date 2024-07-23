@@ -27,4 +27,5 @@ export interface ArtCardProps {
 
 export interface FavoriteArtCardProps {
     favoriteRecord: FavoriteRecord;
+    handleDelete: (id:string) => void;
 }
