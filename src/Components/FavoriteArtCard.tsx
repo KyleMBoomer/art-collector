@@ -7,7 +7,7 @@ const FavoriteArtCard: React.FC<FavoriteArtCardProps> = ({ favoriteRecord, handl
         <div className="favorite-art-card">
             <h3>{favoriteRecord.longTitle}</h3>
             <img src={favoriteRecord.webImage.url} alt={favoriteRecord.longTitle} />
-            <button className="favorite-button" onClick={() => handleDelete(favoriteRecord.id)}>-</button>
+            <button className="delete-button" onClick={() => handleDelete(favoriteRecord.id)}>-</button>
         </div>
         )
 }

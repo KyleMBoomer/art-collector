@@ -20,3 +20,36 @@
     padding: .3rem;
     transition: transform 0.5s ease;
 }
+
+.delete-button {
+    display:flex;
+    /* justify-content: end; */
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    font-size: 3rem;
+    transition: transform 0.5s ease;
+    /* background-color: rgba(241, 241, 241, 0.1); */
+    color: rgb(253, 38, 38);
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+.delete-button:hover {
+    transform: scale(1.3);
+}
+
+.delete-button:hover::after {
+    content: 'Remove Piece';
+    font-size: .8rem;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    position: absolute;
+    top: 40%;
+    right: 1.5rem;
+    z-index: 2;
+}
