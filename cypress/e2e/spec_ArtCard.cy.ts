@@ -1,8 +1,9 @@
 describe('Art Card Tests', () => {
   beforeEach(() => {
-    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=25', { 
-        statusCode: 200, 
-        fixture: 'records.json' }
+    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=brush&ps=25', {
+      statusCode: 200,
+      fixture: 'records.json'
+    }
     )
     cy.visit('http://localhost:3000/')
   });
@@ -28,7 +29,7 @@ describe('Art Card Tests', () => {
     });
   });
 
-  it('Should have an add button', ()=> {
+  it('Should have an add button', () => {
     cy.visit('http://localhost:3000/MainGallery')
     cy.get('.main-gallery .art-card button').should('exist')
   });

@@ -6,10 +6,6 @@ describe('Main Page Tests', () => {
     cy.visit('http://localhost:3000/')
   })
 
-  // it('should display the welcome message', () => {
-  //   cy.contains('Welcome to Art Collector').should('be.visible')
-  // })
-
   it('should display a navigation bar with a logo and two links, a video, a welcome message, and a footer. ', () => {
     cy.get('.Header').should('exist')
     cy.get('.main-logo').should('exist')
