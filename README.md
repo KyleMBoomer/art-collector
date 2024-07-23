@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+![Logo](https://github.com/user-attachments/assets/14445988-a8b5-4b73-b29b-bfed6affe842)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Abstract
+The “Art Collector” project is built with TypeScript and React, it allows you to browse artworks from the Rijksmuseum in the Netherlands, learn about them, and even create your own gallery by saving your favorites. Designed with accessibility in mind, it ensures that everyone can enjoy the content. Additionally, it is thoroughly tested with Cypress, and our team has implemented robust error handling methods to address any issues that may arise.
 
-## Available Scripts
+## Preview
 
-In the project directory, you can run:
 
-### `npm start`
+## Screenshots
+### Home Page
+![Screenshot 2024-07-22 at 8 38 02 PM](https://github.com/user-attachments/assets/8a9e5acd-9976-4488-a3b9-c9b5b6090e19)
+### Main Gallery
+![Screenshot 2024-07-22 at 8 38 17 PM](https://github.com/user-attachments/assets/fb8164ee-1ddc-47aa-8185-e5f8a710ed51)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation Instructions
+- [ ]  If you have not already, clone down the repository onto your local machine using "git clone https://github.com/KyleMBoomer/art-collector" Once cloned down, cd into the direction and install dependencies by running "npm install"
+- [ ]  Run "npm start" then visit the local host to view the application in your browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Pre-Planning
+Used Github Project for Pre-planning. [here](https://github.com/users/KyleMBoomer/projects/2)
+![layout11](https://github.com/user-attachments/assets/c9d8cc06-90e8-4e31-91f0-336ddd227bbf)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Learning Goals
+  * Gain hands-on experience with Typescript, Cypress and React.
+  * Develop a modular project structure.
+  * Utilize PR templates and a project board for efficient workflow management.
+  
+## Challenges
+  * Initially, our plan was to utilize the Harvard Museum’s API. However, we encountered multiple issues that led to the generation of inconsistent data sets. As a result, our team convened and dedicated several hours to researching and identifying a more reliable museum API.
+  * Challenge 2
+  
+## Wins
+* Win 1
+* Win 2
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributions
+[Jordan Williamson - LinkedIn](https://www.linkedin.com/in/jordan-williamson-a079b3271/) <br />
+[Kim Ewing - LinkedIn](https://www.linkedin.com/in/kimberlypekar/) <br />
+[Kyle Boomer - LinkedIn](https://www.linkedin.com/in/kylemboomer/) <br />
+[Seong Kang - LinkedIn](https://www.linkedin.com/in/seong-kang/)

@@ -6,12 +6,11 @@ import { Record } from '../Utility/Types'
 import { useFavorites } from './Favorites'
 import { fetchArtRecords } from './ApiCalls'
 
-
 const MainGallery: React.FC = () => {
     const [allRecords, setAllRecords] = useState<Record[]>([]);
     const [error, setError] = useState<string | null>(null);
     const [favoriteRecords, setFavoriteRecords] = useFavorites();
-    const [isLoading, setLoading] = useState(false)
+    const [isLoading, setLoading] = useState(false);
 
     function handleFavorite(record: Record) {
         const isAlreadyFavorited = favoriteRecords.some(favoriteRecord => favoriteRecord.id === record.id)
