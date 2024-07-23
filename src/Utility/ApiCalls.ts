@@ -4,7 +4,7 @@ import type { Record } from '../Utility/Types.js';
 export const fetchArtRecords = async (): Promise<Record[]> => {
     
     try {
-        const res = await fetch('https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=25')
+        const res = await fetch('https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=50')
         if (!res.ok) {
             throw new Error('Failed to fetch')
         }
