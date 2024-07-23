@@ -6,9 +6,6 @@ import { Record } from '../Utility/Types'
 import { useFavorites } from './Favorites'
 import { fetchArtRecords } from './ApiCalls'
 
-// interface MainGalleryProps {
-//     records: Record[];
-// }
 
 const MainGallery: React.FC = () => {
     const [allRecords, setAllRecords] = useState<Record[]>([]);
