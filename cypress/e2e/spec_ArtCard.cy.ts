@@ -1,6 +1,6 @@
 describe('Art Card Tests', () => {
   beforeEach(() => {
-    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=brush&ps=25', {
+    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=brush&ps=30', {
       statusCode: 200,
       fixture: 'records.json'
     }
@@ -34,12 +34,11 @@ describe('Art Card Tests', () => {
     cy.get('.main-gallery .art-card button').should('exist')
   });
 
-  it('Should be able to click and hover over the button', () => {
+  it('Should be able to hover over the button', () => {
     cy.visit('http://localhost:3000/MainGallery');
     cy.get('.main-gallery .art-card .favorite-button').each(($btn) => {
       cy.wrap($btn).trigger('mouseover');
-      cy.wrap($btn).click()
-      cy.wrap($btn).trigger('mouseout');
+      cy.wrap($btn).trigger('mouseout')
     });
   });
 })

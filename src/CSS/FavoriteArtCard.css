@@ -4,9 +4,9 @@
     justify-content: center;
     align-items: center;
     width: 25vw;
-    height: 40vh;
+    height: 45vh;
     max-width: 25vw;
-    max-height: 40vh;
+    max-height: 45vh;
     border: 2px solid rgb(228, 228, 228);
     margin: 10px;
     padding: 10px;
@@ -14,10 +14,6 @@
     position: relative;
     overflow: hidden;
     text-wrap: wrap;
-
-    h3 {
-        font-size: 1.85rem;
-    }
 }
 
 .favorite-art-card:hover {
@@ -33,12 +29,12 @@
 
 .delete-button {
     position: absolute;
-    bottom: 1.75rem;
-    right: 1.9rem;
+    bottom: .5rem;
+    right: .9rem;
     border: none;
     width: 2rem;
     height: 3.5rem;
-    font-size: 5rem;
+    font-size: 3.5rem;
     transition: transform 0.5s ease;
     background-color: rgba(241, 241, 241, 0.1);
     color: rgb(253, 38, 38);
@@ -53,7 +49,7 @@
 
 .delete-button:hover::after {
     content: 'Remove Piece';
-    font-size: 1rem;
+    font-size: .8rem;
     background-color: black;
     color: white;
     padding: 10px;

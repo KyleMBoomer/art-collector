@@ -24,12 +24,12 @@
 
 p {
     margin: 1rem;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 5rem;
 }
 
 .backToMain {
-    width: 30rem;
+    width: 20rem;
     height: 3.5rem;
     background-color: black;
     border-radius: 2.5rem;
@@ -38,11 +38,11 @@ p {
 
 .mainGalleryLink {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
 }
 
 .MyGallery-Title {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3.5rem;
+    font-size: 2.4rem;
 }

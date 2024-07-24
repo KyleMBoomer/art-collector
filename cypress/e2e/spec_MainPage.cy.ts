@@ -1,6 +1,6 @@
 describe('Main Page Tests', () => {
   beforeEach(() => {
-    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=25',
+    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=brush&ps=25',
       { fixture: 'records.json' }
     ).as('getRecords')
     cy.visit('http://localhost:3000/')
