@@ -7,7 +7,9 @@ const PageNotFound: React.FC = () => {
         <div className="page-not-found">
             <h1>404-Page Not Found!</h1>
             <p>How did you get here????</p>
-            <Link to="/">Go back to the homepage!</Link>
+            <button className='homeButton'>
+                <Link to="/" className='homeLink'>Go back to the homepage!</Link>
+            </button>
         </div>
     )
 }

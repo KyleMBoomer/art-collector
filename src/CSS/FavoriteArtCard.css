@@ -1,13 +1,23 @@
 .favorite-art-card {
     display: flex;
     flex-direction: column;
-    width: 50vw;
-    align-content: center;
-    align-items: center;
-    border: .175rem solid rgb(228, 228, 228);
     justify-content: center;
-    margin: .75rem;
-    padding: .75rem;
+    align-items: center;
+    width: 25vw;
+    height: 40vh;
+    max-width: 25vw;
+    max-height: 40vh;
+    border: 2px solid rgb(228, 228, 228);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    text-wrap: wrap;
+
+    h3 {
+        font-size: 1.85rem;
+    }
 }
 
 .favorite-art-card:hover {
@@ -15,26 +25,24 @@
 }
 
 .favorite-art-card img {
-    width: 50%;
-    height: auto;
+    max-width: 20vw;
+    max-height: 27vh;
     padding: .3rem;
     transition: transform 0.5s ease;
 }
 
 .delete-button {
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    justify-self: end;
-    margin-right:2rem;
-    width: 22rem;
+    position: absolute;
+    bottom: 1.75rem;
+    right: 1.9rem;
+    border: none;
+    width: 2rem;
     height: 2rem;
     font-size: 3rem;
     transition: transform 0.5s ease;
+    background-color: rgba(241, 241, 241, 0.1);
     color: rgb(253, 38, 38);
     z-index: 10;
-    border:none;
-    background: none;
     cursor: pointer;
 }
 

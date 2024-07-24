@@ -35,11 +35,14 @@ const MainGallery: React.FC = () => {
     }, [])
 
     const artCards = allRecords.map(record => {
+        const isAlreadyFavorited = favoriteRecords.some(favoriteRecord => favoriteRecord.id === record.id)
+
         return (
             <div key={record.id}>
                 <ArtCard
                     record={record}
                     handleFavorite={handleFavorite}
+                    favorited={isAlreadyFavorited}
                 />
             </div>
         )

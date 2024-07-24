@@ -5,11 +5,12 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    padding: 20px;
 }
 
 .MainGallery-Title {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
+    font-size: 5rem;
 }
 
 .card-wrapper {
@@ -26,4 +27,8 @@
 .loadingText {
     font-size: 80px;
     margin: auto;
+}
+
+.header-wrapper {
+    width: 150px;
 }

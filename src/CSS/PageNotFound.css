@@ -1,3 +1,25 @@
 .page-not-found {
     text-align: center;
+    min-height: 1159px;
+    align-content: center;
+    h1 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 35px;
+    }
+}
+
+.homeButton {
+    width: 25rem;
+    height: 5rem;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 2.5rem;
+}
+
+.homeLink {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
 }

@@ -25,7 +25,8 @@ const MyGallery: React.FC = () => {
     return (
         <div className="my-gallery">
             <h1 className="MyGallery-Title">My Gallery</h1>
-            {favoriteArtCards.length > 0 ? (favoriteArtCards) : (
+            
+            {favoriteArtCards.length > 0 ? (<div className='favoriteCard-wrapper'>{favoriteArtCards}</div>) : (
                 <div className="navWrap">
                     <p>No favorites yet! 😞</p>
                     <button className='backToMain'>
@@ -33,6 +34,7 @@ const MyGallery: React.FC = () => {
                     </button>
                 </div>
             )}
+           
         </div>
     )
 }

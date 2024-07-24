@@ -13,9 +13,9 @@
     text-align: center;
     position: relative;
     overflow: hidden;
-
+    text-wrap: wrap;
     h3 {
-        font-size: .85rem;
+        font-size: 1.85rem;
     }
 }
 
@@ -56,6 +56,39 @@
 
 .favorite-button:hover::after {
     content: 'Add to My Gallery';
+    font-size: .8rem;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    position: absolute;
+    top: 40%;
+    right: 1.5rem;
+    z-index: 2;
+}
+
+.favoritedAlready-button {
+    position: absolute;
+    bottom: 1.75rem;
+    right: 1.9rem;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    font-size: 3rem;
+    transition: transform 0.5s ease;
+    background-color: rgba(241, 241, 241, 0.1);
+    color: grey;
+    z-index: 10;
+    cursor: disabled;
+}
+
+.favorited-button:hover {
+    transform: scale(1.3);
+}
+
+.favoritedAlready-button:hover::after {
+    content: 'Already added';
     font-size: .8rem;
     background-color: black;
     color: white;
