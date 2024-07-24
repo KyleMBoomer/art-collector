@@ -25,7 +25,7 @@ describe('My Gallery Tests', () => {
         cy.get('.MainGallery-button').should('contain', 'Main Gallery')
         cy.get('.MyGallery-button').should('contain', 'My Gallery')
         cy.get('.MyGallery-Title').should('contain', 'My Gallery')
-        // add in test for No favorites yet!
+        cy.get('p').should('contain', 'No favorites yet!')
         cy.get('.footer').should('exist')
     })
 
