@@ -17,6 +17,10 @@ The “Art Collector” project is built with TypeScript and React, it allows yo
 ### My Gallery
 ![Screenshot 2024-07-23 at 1 18 07 PM](https://github.com/user-attachments/assets/dd7944c4-ddaa-4045-9676-57eb6e664458)
 
+### Error Handling
+![Screenshot 2024-07-24 at 11 48 31 AM](https://github.com/user-attachments/assets/73744860-fa40-4262-b162-9e8a79a82747)
+
+
 
 
 ## Installation Instructions
