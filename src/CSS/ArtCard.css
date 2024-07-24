@@ -57,7 +57,7 @@
 
 .favorite-button:hover::after {
     content: 'Add to My Gallery';
-    font-size: .8rem;
+    font-size: 1rem;
     background-color: black;
     color: white;
     padding: 10px;
@@ -90,7 +90,7 @@
 
 .favoritedAlready-button:hover::after {
     content: 'Already added';
-    font-size: .8rem;
+    font-size: 1.5rem;
     background-color: black;
     color: white;
     padding: 10px;
