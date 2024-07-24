@@ -7,6 +7,14 @@
     min-height: 61rem;
 }
 
+.favoriteCard-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
 .navWrap {
     display:flex;
     flex-direction: column;
