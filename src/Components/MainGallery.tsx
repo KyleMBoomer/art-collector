@@ -4,11 +4,12 @@ import ArtCard from './ArtCard'
 import { useEffect, useState } from 'react'
 import { Record } from '../Utility/Types'
 import { useFavorites } from './Favorites'
-import { fetchArtRecords } from '../Utility/ApiCalls'
+import {fetchArtRecords}  from '../Utility/ApiCalls'
+import sadMan from '../Assets/Van_Gogh_-_Trauernder_alter_Mann.jpeg'
 
 const MainGallery: React.FC = () => {
     const [allRecords, setAllRecords] = useState<Record[]>([]);
-    const [error, setError] = useState<string | null>(null);
+    const [error, setError] = useState('');
     const [favoriteRecords, setFavoriteRecords] = useFavorites();
     const [isLoading, setLoading] = useState(false);
 
@@ -28,7 +29,7 @@ const MainGallery: React.FC = () => {
                 setAllRecords(paintings)
                 setLoading(false)
             } catch (error) {
-                setError('Failed to fetch records. 😞')
+                setError('Sorry, we are experiencing an error on our end. Try again later!')
             }
         }
         loadRecords()
@@ -54,23 +55,31 @@ const MainGallery: React.FC = () => {
                 <h2 className="MainGallery-Title">Main Gallery</h2>
             </div>
             <div className='card-wrapper'>
-                {isLoading ? <p className='loadingText'>
-                    <span> . </span>
-                    <span> . </span>
-                    <span> . </span>
-                    <span> l </span>
-                    <span> o </span>
-                    <span> a </span>
-                    <span> d </span>
-                    <span> i </span>
-                    <span> n </span>
-                    <span> g </span> 
-                    <span> A </span>
-                    <span> r </span>
-                    <span> t </span>
-                     🎭🖼️</p> 
-                    : artCards}
-                {error && <p className="error-message">{error}</p>}
+            {error ? (
+                <div className='errorWrapper'>
+            <p className="error-message">{error}</p>
+            <img src={sadMan} alt='sad man'/>
+            </div>
+        ) : isLoading ? (
+            <p className='loadingText'>
+                <span> . </span>
+                <span> . </span>
+                <span> . </span>
+                <span> l </span>
+                <span> o </span>
+                <span> a </span>
+                <span> d </span>
+                <span> i </span>
+                <span> n </span>
+                <span> g </span> 
+                <span> A </span>
+                <span> r </span>
+                <span> t </span>
+                 🎭🖼️
+            </p>
+        ) : (
+            artCards
+        )}
             </div>
         </div>
     )
