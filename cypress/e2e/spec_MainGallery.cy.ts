@@ -29,5 +29,6 @@ describe('Main Gallery Tests', () => {
     cy.visit('http://localhost:3000/MainGallery');
     cy.wait('@getArtRecordsError');
     cy.get('.main-gallery').should('contain', 'Sorry, we are experiencing an error on our end. Try again later!');
+    cy.get('.errorWrapper > img').should('exist')
   })
 })
