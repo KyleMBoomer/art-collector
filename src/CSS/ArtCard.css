@@ -4,9 +4,9 @@
     justify-content: center;
     align-items: center;
     width: 25vw;
-    height: 40vh;
+    height: 45vh;
     max-width: 25vw;
-    max-height: 40vh;
+    max-height: 45vh;
     border: 2px solid rgb(228, 228, 228);
     margin: 10px;
     padding: 10px;
@@ -16,7 +16,8 @@
     text-wrap: wrap;
 
     h3 {
-        font-size: 1.25rem;
+        font-size: 1rem;
+        margin: 5px;
     }
 }
 
@@ -38,7 +39,7 @@
 .favorite-button {
     position: absolute;
     bottom: 1.75rem;
-    right: 1.9rem;
+    right: .9rem;
     border: none;
     width: 2rem;
     height: 2rem;
@@ -57,7 +58,7 @@
 
 .favorite-button:hover::after {
     content: 'Add to My Gallery';
-    font-size: 1rem;
+    font-size: .8rem;
     background-color: black;
     color: white;
     padding: 10px;
@@ -72,7 +73,7 @@
 .favoritedAlready-button {
     position: absolute;
     bottom: 1.75rem;
-    right: 1.9rem;
+    right: .9rem;
     border: none;
     width: 2rem;
     height: 2rem;
@@ -90,7 +91,7 @@
 
 .favoritedAlready-button:hover::after {
     content: 'Already added';
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: black;
     color: white;
     padding: 10px;

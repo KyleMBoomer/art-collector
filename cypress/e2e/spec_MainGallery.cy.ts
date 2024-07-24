@@ -1,6 +1,6 @@
 describe('Main Gallery Tests', () => {
   beforeEach(() => {
-    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=brush&ps=25', {
+    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=brush&ps=30', {
       statusCode: 200,
       fixture: 'records.json'
     }).as('getRecords')
@@ -22,12 +22,12 @@ describe('Main Gallery Tests', () => {
   });
 
   it('should handle fetch errors gracefully', () => {
-    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=brush&ps=25', {
+    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=brush&ps=30', {
       statusCode: 500
     }).as('getArtRecordsError');
 
     cy.visit('http://localhost:3000/MainGallery');
     cy.wait('@getArtRecordsError');
-    cy.get('.main-gallery').should('contain', 'Failed to fetch records');
+    cy.get('.main-gallery').should('contain', 'Sorry, we are experiencing an error on our end. Try again later!');
   })
 })
