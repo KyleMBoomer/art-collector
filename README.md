@@ -21,12 +21,12 @@ The “Art Collector” project is built with TypeScript and React, it allows yo
 
 ## Installation Instructions
 ### To start the app
-- [ ]  Clone down the repository onto your local machine using "git clone https://github.com/KyleMBoomer/art-collector"
-- [ ]  Once cloned down, cd into the direction and install dependencies by running "npm install"
-- [ ]  Run "npm start" then visit the local host to view the application in your browser.
+- [ ]  Clone down the repository onto your local machine using `git clone https://github.com/KyleMBoomer/art-collector`
+- [ ]  Once cloned down, cd into the direction and install dependencies by running `npm install`
+- [ ]  Run `npm start` then visit the local host to view the application in your browser.
 
 ### To test with Cypress
-- [ ]  Run "npm run cy:open #" then visit the local host to view the application in your browser.
+- [ ]  Run `npm run cy:open #` then visit the local host to view the application in your browser.
 - [ ]  Click E2E testing
 - [ ]  Click Start E2E Testing in Chrome
 
@@ -43,11 +43,11 @@ Used Github Project for Pre-planning. [here](https://github.com/users/KyleMBoome
   
 ## Challenges
   * Initially, our plan was to utilize the Harvard Museum’s API. However, we encountered multiple issues that led to the generation of inconsistent data sets. As a result, our team convened and dedicated several hours to researching and identifying a more reliable museum API.
-  * Challenge 2
+  * The learning curve with TypeScript in React was a bit steeper than the team had initially estimated. In addition, we had to learn new React hooks like `useContext` and `createContext` to make the My Gallery functionality work with regard to the Main Gallery fetch call from the Riksmuseum API. 
   
 ## Wins
-* Win 1
-* Win 2
+* Successful implementation of Cypress testing over a modularized project in TypeScript feels like a win to us. We learned we needed to create fixtures that mirror the data structure from the API to pass our robust test suites. 
+* Creating the Types file, and passing them down as props to the components, felt like a win with TypeScript. The built-in "error handling" of the language kept us from making mistakes with our Types. 
 
 ## Contributions
 [Jordan Williamson - LinkedIn](https://www.linkedin.com/in/jordan-williamson-a079b3271/) <br />
