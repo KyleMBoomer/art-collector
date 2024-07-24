@@ -4,7 +4,7 @@ import ArtCard from './ArtCard'
 import { useEffect, useState } from 'react'
 import { Record } from '../Utility/Types'
 import { useFavorites } from './Favorites'
-import { fetchArtRecords } from './ApiCalls'
+import { fetchArtRecords } from '../Utility/ApiCalls'
 
 const MainGallery: React.FC = () => {
     const [allRecords, setAllRecords] = useState<Record[]>([]);
@@ -54,7 +54,22 @@ const MainGallery: React.FC = () => {
                 <h2 className="MainGallery-Title">Main Gallery</h2>
             </div>
             <div className='card-wrapper'>
-                {isLoading ? <p className='loadingText'>...loading Art 🎭🖼️</p> : artCards}
+                {isLoading ? <p className='loadingText'>
+                    <span> . </span>
+                    <span> . </span>
+                    <span> . </span>
+                    <span> l </span>
+                    <span> o </span>
+                    <span> a </span>
+                    <span> d </span>
+                    <span> i </span>
+                    <span> n </span>
+                    <span> g </span> 
+                    <span> A </span>
+                    <span> r </span>
+                    <span> t </span>
+                     🎭🖼️</p> 
+                    : artCards}
                 {error && <p className="error-message">{error}</p>}
             </div>
         </div>
