@@ -1,6 +1,6 @@
 describe('Main Gallery Tests', () => {
   beforeEach(() => {
-    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=25', {
+    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=brush&ps=25', {
       statusCode: 200,
       fixture: 'records.json'
     }).as('getRecords')
@@ -13,7 +13,7 @@ describe('Main Gallery Tests', () => {
     cy.get('.MainGallery-Title').should('contain', 'Main Gallery');
   })
 
-  it.only('should display the main gallery with art cards', () => {
+  it('should display the main gallery with art cards', () => {
     cy.visit('http://localhost:3000/MainGallery');
     cy.wait('@getRecords');
     cy.get('.main-gallery').should('exist');
@@ -22,7 +22,7 @@ describe('Main Gallery Tests', () => {
   });
 
   it('should handle fetch errors gracefully', () => {
-    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=painting&ps=25', {
+    cy.intercept('GET', 'https://www.rijksmuseum.nl/api/en/collection?key=Ac7mP6Ke&technique=brush&ps=25', {
       statusCode: 500
     }).as('getArtRecordsError');
 
