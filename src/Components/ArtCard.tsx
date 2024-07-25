@@ -1,4 +1,3 @@
-import React, { useState} from 'react'
 import '../CSS/ArtCard.css'
 import { ArtCardProps } from '../Utility/Types'
 
