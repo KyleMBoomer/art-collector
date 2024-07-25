@@ -41,7 +41,7 @@ The “Art Collector” project is built with TypeScript and React, it allows yo
 
 ## 🛣️ Pre-Planning
 Used Github Project for Pre-planning. [here](https://github.com/users/KyleMBoomer/projects/2)
-![layout11](https://github.com/user-attachments/assets/c9d8cc06-90e8-4e31-91f0-336ddd227bbf)
+![layout](https://github.com/user-attachments/assets/028d9f34-dd69-4559-b720-a3f1d83ce64c)
 
 
 ## ⚽️ Learning Goals
