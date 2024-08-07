@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/kylemboomer.github.io/art-collector/static/css/main.045a42e8.css",
-    "main.js": "/kylemboomer.github.io/art-collector/static/js/main.7baebfe8.js",
+    "main.js": "/kylemboomer.github.io/art-collector/static/js/main.dbf97a6b.js",
     "static/js/453.46019c99.chunk.js": "/kylemboomer.github.io/art-collector/static/js/453.46019c99.chunk.js",
     "static/media/sampleVideo1.mp4": "/kylemboomer.github.io/art-collector/static/media/sampleVideo1.31883a8e22b8e29f6513.mp4",
     "static/media/Van_Gogh_-_Trauernder_alter_Mann.jpeg": "/kylemboomer.github.io/art-collector/static/media/Van_Gogh_-_Trauernder_alter_Mann.bc1a4caa0173e5ee297f.jpeg",
     "static/media/Logo.png": "/kylemboomer.github.io/art-collector/static/media/Logo.a6f89bd3fc9e52e5baf4.png",
     "index.html": "/kylemboomer.github.io/art-collector/index.html",
     "main.045a42e8.css.map": "/kylemboomer.github.io/art-collector/static/css/main.045a42e8.css.map",
-    "main.7baebfe8.js.map": "/kylemboomer.github.io/art-collector/static/js/main.7baebfe8.js.map",
+    "main.dbf97a6b.js.map": "/kylemboomer.github.io/art-collector/static/js/main.dbf97a6b.js.map",
     "453.46019c99.chunk.js.map": "/kylemboomer.github.io/art-collector/static/js/453.46019c99.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.045a42e8.css",
-    "static/js/main.7baebfe8.js"
+    "static/js/main.dbf97a6b.js"
   ]
 }
