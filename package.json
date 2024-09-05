@@ -1,7 +1,7 @@
 {
   "name": "art-collector",
   "version": "0.1.0",
-  "homepage": "https:/kylemboomer.github.io/art-collector",
+  "homepage": "https://kylemboomer.github.io/art-collector",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
